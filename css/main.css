@@ -1,0 +1,162 @@
+/*** sectioning elements ***/
+
+body {
+  max-width: 100%;
+}
+
+header {
+  background-color: #000000;
+  margin: 0;
+  vertical-align: middle;
+  max-width: 100%
+
+}
+
+main {
+
+}
+
+footer {
+  background-color: #9B9B9B;
+}
+
+nav {
+
+}
+
+section {
+}
+
+aside {
+
+}
+
+
+/**** content styles ***/
+
+h1 {
+  color: #ff0000;
+  margin-top: 50px;
+  font-family: 'Lobster', cursive;
+  vertical-align: middle;
+  font-size: 65px;
+  text-align: center;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+p.add {
+  color: #ff0000;
+  text-align: center;
+}
+
+blockquote {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+/*** image styles ***/
+
+img  {
+  float: left;
+  max-width: 100%;
+}
+
+
+/*** link styles ***/
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/***Nav style***/
+
+.navbar {
+     background-color: #ff0000;
+   }
+
+   .navbar-brand {
+     color: #000000;
+   }
+
+   .navbar-brand a:link,
+   .navbar-brand a:visited {
+
+   }
+
+   .navbar-brand a:hover,
+   .navbar-brand a:active {
+
+   }
+
+   .navbar-menu a:link,
+   .navbar-menu a:visited {
+     color: #ffffff;
+   }
+
+   .navbar-menu a:hover,
+   .navbar-menu a:active {
+
+   }
