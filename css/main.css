@@ -135,6 +135,7 @@ a:active {
 
 .navbar {
      background-color: #ff0000;
+     font-family: 'Lobster', cursive;
    }
 
    .navbar-brand {
@@ -160,3 +161,25 @@ a:active {
    .navbar-menu a:active {
 
    }
+
+   .navbar-menu.menu-shown {
+      background-color: #ff0000;
+    }
+
+    .menu-toggle {
+      color: #ffffff;
+    }
+
+    .menu-dismiss {
+      color: #fff;
+    }
+
+    .menu-shown a:link,
+    .menu-shown a:visited {
+      color: #ffffff;
+    }
+
+    .menu-shown a:active,
+    .menu-shown a:hover {
+
+    }
