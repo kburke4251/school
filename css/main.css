@@ -211,7 +211,7 @@ a:active {
    }
 
    .navbar-menu.menu-shown {
-      background-color: #ff0000;
+      background-color: #fcca2b;
     }
 
     .menu-toggle {
@@ -224,7 +224,7 @@ a:active {
 
     .menu-shown a:link,
     .menu-shown a:visited {
-      color: #ffffff;
+      color: #000000;
     }
 
     .menu-shown a:active,
