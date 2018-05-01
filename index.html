@@ -13,17 +13,22 @@
   <link rel="stylesheet" href="css/odin-0.10.4.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  <!--carousel style-->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- start making your grid here -->
 
+
   <header>
     <div class="container-lg">
       <div class="row">
         <div class="col-xs-12">
-          <img src="baboon.png">
+          <img class="head" src="img/baboon.png">
           <h1>Baboons High School</h1>
           <p class="add">102 Wall Street, NY, 10005 Phone: (647)-897-2987 Fax:(647)-897-2988</p>
         </div>
@@ -41,40 +46,96 @@
           <li><a href="#">Teacher Sites</a></li>
           <li><a href="#">Athletic Resources</a></li>
           <li><a href="#">Staff Resources</a></li>
+          <li><a href="#">Enroll Today</a></li>
         </ul>
       </div>
     </nav>
 
+ <div class="container">
   <main>
     <div class="container-lg">
       <div class="row">
         <div class="col-xs-12">
-          Stuff
+          <div class="owl-carousel owl-theme">
+            <div><img src="img/students.jpg" alt="Student"></div>
+            <div><img src="img/mascot.jpg" alt="Baboon"></div>
+            <div><img src="img/girl.jpg" alt="girl working"></div>
+            <div><img src="img/class.jpg" alt="classroom"></div>
+          </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-3">Column 1</div>
-        <div class="col-xs-12 col-md-6 col-lg-3">Column 2</div>
-        <div class="col-xs-12 col-md-6 col-lg-3">Column 3</div>
-        <div class="col-xs-12 col-md-6 col-lg-3">Column 4</div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+          <h2>Our Mission</h2>
+            <p class="mission">Baboon High seeks to create an environment in which any and all students feel welcome and are accepted. Our teachers and staff members are highly trained and commit themselves towards their jobs. Baboon High’s goal is to help children escape the bonds of poverty and hopelessness by providing education, life skills, and an environment that cares.</p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+          <h2>Sign up for AP Baboon History</h2>
+            <form action="thanks.html" method="post">
+              <fieldset>
+                  <label for="name">Name:</label>
+                    <input id="name" type="text" name="name"><br>
+                  <label for="grade">Grade:</label>
+                    <input id="grade" type="text" name="address"><br>
+                  <label for="address">Address:</label>
+                    <input id="address" type="text" name="address"><br>
+                  <label for="city">City:</label>
+                    <input id="city" type="text" name="city"><br>
+                  <label for="state">State:</label>
+                    <input id="state" type="text" name="state" maxlength="2" size="2">
+                  <label for="zip">Zip:</label>
+                    <input id="zip" type="text" name="zip" maxlength="5" size="5">
+              </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4"><iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=greenvilleschools.us_e55nti1fmo4it4bvalv7758di4%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=America%2FNew_York" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe></div>
       </div>
     </div>
   </main>
+</div>
+
 
   <footer>
     <div class="container-lg">
       <div class="row">
-        <div class="col-xs-12 col-md-4">Column 1</div>
-        <div class="col-xs-12 col-md-4">Column 2</div>
-        <div class="col-xs-12 col-md-4">Column 3</div>
-      </div>
-    </div>
+        <div class="col-xs-12 col-md-6"><a href="https://www.instagram.com">
+          <br><img class="logo" src="img/instagram_logo.png" alt="School Instagram"></a>
+          <a href="https://twitter.com">
+          <img class="logo" src="img/twitter_logo.png" alt="School Twitter"></a>
+          <a href="https://www.facebook.com">
+          <img class="logo" src="img/facebook_logo.png" alt="School Facebook"></a>
+          <p>© 2018 Baboons<br>
+          All Rights Reserved.</br></p>
+          <p>For additional Information please call (647)-897-2987</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5839411647407!2d-74.0089184845953!3d40.70515997933265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a161a6a8b9b%3A0x5f086bf5d0d320ac!2s102+Wall+St%2C+New+York%2C+NY+10005!5e0!3m2!1sen!2sus!4v1523891543253" width="400" height="275" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
   </footer>
 
   <!-- include any javascript below this line -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   <script src="js/odin-0.7.1.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayHoverPause: true,
+          autoplayTimeout: 2500,
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false
+      })
+    });
+  </script>
 
 
 </body>
