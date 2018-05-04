@@ -111,20 +111,26 @@ li {
 }
 
 table {
-
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-family: sans-serif;
 }
 
 tr {
-
+  padding: 10px;
 }
 
 th {
-
+  padding: 10px;
 }
 
 td {
-
+  padding: 15px;
 }
+
 
 form {
   font-size: 15px;
@@ -152,6 +158,30 @@ vertical-align: middle;
     margin-bottom: 8px;
     margin-top: 8px;
     }
+  table {
+    width: 100%;
+    }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    border: 1px solid #740003;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  td {
+    display: block;
+  }
+
+  td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
 }
 iframe {
   display: block;
